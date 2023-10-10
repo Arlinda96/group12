@@ -58,6 +58,14 @@ Camilla -
 gr12 <- 1
 ```
 
+## new analysis 
+```{r}
+5+5 
+gr12 <-  100
+
+```
+
+
 ## Group member s222940
 
 ## Group member s222785

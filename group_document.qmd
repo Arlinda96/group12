@@ -12,8 +12,17 @@ editor: visual
 
 ## Group member s234118
 
+Camilla -
+
+```{r}
+2+2
+
+gr12 <- 1
+```
+
 ## Group member s222940
 
+<<<<<<< HEAD
 ```{r}
 hello darkness my old friend
 ```
@@ -22,4 +31,6 @@ hello darkness my old friend
 bonjour
 ```
 
+=======
+>>>>>>> df3d200f4a3525cb1fef84fc1e3291ea1566dca4
 ## Group member s222785

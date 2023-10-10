@@ -46,7 +46,7 @@ gr12 <- 1
 
 ## Group member s222940
 
-`New feature` or `New analysis`
+`New feature` or `New analysis`
 
 nanananananannaaaaaa
 
@@ -54,7 +54,3 @@ nanananananannaaaaaa
 #memememe
 ```
 
-## Group member s222785
-```{r}
-test
-```

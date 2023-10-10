@@ -1,0 +1,18 @@
+---
+title: "group_document"
+format:
+  html:
+    embed-resources: true
+editor: visual
+---
+
+## Group member s223712
+
+## Group member s222777
+
+## Group member s234118
+
+## Group member s222940
+
+## Group member s222785
+

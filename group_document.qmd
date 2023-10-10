@@ -12,13 +12,65 @@ Group member
 
 s22277, s223712, s234118, 222940, 222785
 
+
+## PCA
+For this assignment we want to learn to do a PCA (principal component analysis) in a collaboratin by the group - facilitated by the use of github. 
+
 ## Load libraries
 
+
 ```{r}
+#| echo: true
+#| eval: true
 library(tidyverse)
-library(ggplot2)
-library(stringr)
+library(broom)
 ```
 
 ## Load data
+First we load the data - we chose to use the data from “PCA tidyverse style” by Claus O. Wilke, Professor of Integrative Biology (https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/). 
+
+This data is a breast cancer dataset from the University of Wisconsin Hospitals. 
+683 patient biopsies are available, and is scored on a scale of 1-10 for 9 attributes. The thrue outcome is binary (benign/malignant).
+
+```{r}
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+biopsy |> 
+  head()
+```
+
+## First we look at the data in PC coordinates
+```{r}
+pca_fit <- biopsy |> 
+  select(where(is.numeric)) |> 
+  scale() |> 
+  prcomp()
+pca_fit |> 
+  augment(biopsy) |> 
+  ggplot(mapping = aes( x = .fittedPC1, 
+                        y = .fittedPC2, 
+                        color = outcome)) + 
+  geom_point() +
+  scale_color_manual(
+    values = c(malignant = "red", benign = "blue")) +
+  labs(x = "PC1",
+       y = "PC2",
+       #title = "PCA",
+       caption = "Data from https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/")
+```
+
+## We now plot the rotation matrix
+```{r}
+pca_fit |> 
+  tidy(matrix = "rotation") |> 
+  pivot_wider(names_from = "PC", 
+              names_prefix = "PC",
+              values_from = "value") |> 
+  ggplot(mapping = aes(x = PC1, 
+                       y = PC2))+
+  geom_segment(xend = 0, 
+               yend = 0) +
+  xlim(-1.25, .5) + 
+  ylim(-.5, 1) + 
+  coord_fixed()
+```
 

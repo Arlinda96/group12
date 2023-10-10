@@ -46,7 +46,7 @@ gr12 <- 1
 
 ## Group member s222940
 
-`New feature` or `New analysis`
+`New feature` or `New analysis`
 
 nanananananannaaaaaa
 
@@ -54,19 +54,3 @@ nanananananannaaaaaa
 #memememe
 ```
 
-<<<<<<< HEAD
-\~ Mikołaj
-
-`New feature` or `New analysis`
-
-`{r} #memememe}`
-
-nanananananannaaaaaaa
-
-## Group member: s222785
-=======
-## Group member s222785
-```{r}
-test
-```
->>>>>>> 37d831ba01a8a65682156729c31f1abc0871bf7b

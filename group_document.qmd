@@ -60,4 +60,13 @@ gr12 <- 1
 
 ## Group member:s222940
 
+\~ Mikołaj
+
+`New feature` or `New analysis`
+
+```{r} #memememe}
+```
+
+nanananananannaaaaaa
+
 ## Group member: s222785

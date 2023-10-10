@@ -10,6 +10,15 @@ editor: visual
 
 ## Group member s222777
 
+### New analysis
+
+Read file:
+
+```{r}
+peptide_data <- read_csv(file= 'data/peptide-detail-ci.csv')
+
+```
+
 Load libraries
 
 ```{r}
@@ -36,9 +45,9 @@ gr12 <- 1
 ```
 
 ## Group member s222940
+
 ```{r}
 #memememe
 ```
-
 
 ## Group member s222785

@@ -37,19 +37,4 @@ gr12 <- 1
 
 ## Group member s222940
 
-Mikolaj -
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-```{r}
-#hello darkness my old friend
-```
-
-```{r}
-bonjour
-```
-
-=======
->>>>>>> df3d200f4a3525cb1fef84fc1e3291ea1566dca4
->>>>>>> 7228349b04317afab38535d205ba4ec1aa27f202
 ## Group member s222785

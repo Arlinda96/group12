@@ -6,7 +6,7 @@ format:
 editor: visual
 ---
 
-## Group member s223712
+## Group member: s223712
 
 New feature
 
@@ -20,7 +20,7 @@ x + y
 #Github exercises 
 ```
 
-## Group member s222777
+## Group member: s222777
 
 ### New analysis
 
@@ -48,7 +48,7 @@ meta_data <- read_csv(file= 'data/subject-metadata.csv')
 
 ```
 
-## Group member s234118
+## Group member: s234118
 
 Camilla -
 
@@ -58,6 +58,6 @@ Camilla -
 gr12 <- 1
 ```
 
+## Group member:s222940
 
-
-## Group member s222785
+## Group member: s222785

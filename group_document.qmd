@@ -36,5 +36,9 @@ gr12 <- 1
 ```
 
 ## Group member s222940
+```{r}
+#memememe
+```
+
 
 ## Group member s222785

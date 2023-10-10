@@ -17,9 +17,10 @@ library(ggplot2)
 library(stringr)
 ```
 
-Load data
+Load data:
 
 ```{r}
+
 meta_data <- read_csv(file= 'data/subject-metadata.csv')
 
 ```

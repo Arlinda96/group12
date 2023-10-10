@@ -7,6 +7,15 @@ editor: visual
 ---
 
 ## Group member s223712
+New feature
+```{r}
+x <- 2
+y <- 3
+x + y
+```
+```{r}
+#Github exercises 
+```
 
 ## Group member s222777
 
@@ -36,9 +45,13 @@ gr12 <- 1
 ```
 
 ## Group member s222940
+
+`New feature` or `New analysis`
+
+nanananananannaaaaaa
+
 ```{r}
 #memememe
 ```
-
 
 ## Group member s222785

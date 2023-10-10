@@ -8,16 +8,15 @@ editor: visual
 
 ## Lab_07 Assignment Group 12
 
-Group member 
+Group members:
 
 s22277, s223712, s234118, 222940, 222785
 
-
 ## PCA
-For this assignment we want to learn to do a PCA (principal component analysis) in a collaboratin by the group - facilitated by the use of github. 
+
+For this assignment we want to learn to do a PCA (principal component analysis) in a collaboration by the group - facilitated by the use of github.
 
 ## Load libraries
-
 
 ```{r}
 #| echo: true
@@ -27,10 +26,10 @@ library(broom)
 ```
 
 ## Load data
-First we load the data - we chose to use the data from “PCA tidyverse style” by Claus O. Wilke, Professor of Integrative Biology (https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/). 
 
-This data is a breast cancer dataset from the University of Wisconsin Hospitals. 
-683 patient biopsies are available, and is scored on a scale of 1-10 for 9 attributes. The thrue outcome is binary (benign/malignant).
+First we load the data - we chose to use the data from "PCA tidyverse style" by Claus O. Wilke, Professor of Integrative Biology (https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/).
+
+This data is a breast cancer dataset from the University of Wisconsin Hospitals. 699 patient biopsies are available, and is scored on a scale of 1-10 for 9 attributes. The true outcome is binary (benign/malignant).
 
 ```{r}
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
@@ -39,6 +38,7 @@ biopsy |>
 ```
 
 ## First we look at the data in PC coordinates
+
 ```{r}
 pca_fit <- biopsy |> 
   select(where(is.numeric)) |> 
@@ -52,13 +52,16 @@ pca_fit |>
   geom_point() +
   scale_color_manual(
     values = c(malignant = "red", benign = "blue")) +
+  theme_minimal() +
   labs(x = "PC1",
        y = "PC2",
-       #title = "PCA",
-       caption = "Data from https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/")
+       title = "PCA",
+       caption = "Data from https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/") +
+  theme(plot.caption = element_text(hjust = 1))
 ```
 
 ## We now plot the rotation matrix
+
 ```{r}
 pca_fit |> 
   tidy(matrix = "rotation") |> 
@@ -69,8 +72,38 @@ pca_fit |>
                        y = PC2))+
   geom_segment(xend = 0, 
                yend = 0) +
+  geom_text(
+    aes(label = column),
+    hjust = 1, 
+    vjust = 1,
+    size = 3,
+    color = "#098a7f") +
+  theme_minimal() +
   xlim(-1.25, .5) + 
   ylim(-.5, 1) + 
+  labs(title = "Rotation Matrix",
+       caption = "Data from https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/") +
+  theme(plot.caption = element_text(hjust = 0)) +
   coord_fixed()
 ```
 
+## We quantify the variance explained by each PC
+
+```{r}
+pca_fit |>
+  tidy(matrix = "eigenvalues")|> 
+  ggplot(mapping = 
+           aes(x = PC, 
+               y = percent)) +
+  geom_col(fill = "#abd94e", alpha = 0.5) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  labs(title = "Variance captured by each PC", 
+       caption = "Data from https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/")
+  theme_classic()
+```
+
+Each PC captures a certain amount of the total variance in the dataset. The first component captures 65% of the variation which presents high importance for the data, separating the benign samples from the malignant samples.

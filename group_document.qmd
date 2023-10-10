@@ -36,9 +36,13 @@ gr12 <- 1
 ```
 
 ## Group member s222940
+
+`New feature` or `New analysis`
+
+nanananananannaaaaaa
+
 ```{r}
 #memememe
 ```
-
 
 ## Group member s222785

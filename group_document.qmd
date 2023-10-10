@@ -67,6 +67,6 @@ gr12 <- 1
 ```{r} #memememe}
 ```
 
-nanananananannaaaaaa
+nanananananannaaaaaaa
 
 ## Group member: s222785

@@ -3,4 +3,8 @@
 .RData
 .Ruserdata
 data
+<<<<<<< HEAD
 doc
+=======
+data/_raw
+>>>>>>> 5886478e869dc591a6b48ddd508d18bd2dd17b5c

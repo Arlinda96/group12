@@ -6,51 +6,19 @@ format:
 editor: visual
 ---
 
-## Group member s223712
-New feature
-```{r}
-x <- 2
-y <- 3
-x + y
-```
-```{r}
-#Github exercises 
-```
+## Lab_07 Assignment Group 12
 
-## Group member s222777
+Group member 
 
-Load libraries
+s22277, s223712, s234118, 222940, 222785
+
+## Load libraries
 
 ```{r}
+library(tidyverse)
 library(ggplot2)
 library(stringr)
 ```
 
-Load data:
-
-```{r}
-
-meta_data <- read_csv(file= 'data/subject-metadata.csv')
-
-```
-
-## Group member s234118
-
-Camilla -
-
-```{r}
-2+2
-
-gr12 <- 1
-```
-
-## Group member s222940
-
-`New feature` or `New analysis`
-
-nanananananannaaaaaa
-
-```{r}
-#memememe
-```
+## Load data
 

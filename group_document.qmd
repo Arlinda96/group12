@@ -7,12 +7,15 @@ editor: visual
 ---
 
 ## Group member s223712
+
 New feature
+
 ```{r}
 x <- 2
 y <- 3
 x + y
 ```
+
 ```{r}
 #Github exercises 
 ```
@@ -22,6 +25,8 @@ x + y
 ### New analysis
 
 Read file:
+
+eleni
 
 ```{r}
 peptide_data <- read_csv(file= 'data/peptide-detail-ci.csv')
@@ -54,7 +59,5 @@ gr12 <- 1
 ```
 
 ## Group member s222940
-
-
 
 ## Group member s222785

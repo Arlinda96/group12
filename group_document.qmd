@@ -36,11 +36,12 @@ gr12 <- 1
 
 ## Group member s222940
 
+Mikolaj -
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 ```{r}
-hello darkness my old friend
+#hello darkness my old friend
 ```
 
 ```{r}

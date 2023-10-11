@@ -60,7 +60,7 @@ pca_fit |>
   theme(plot.caption = element_text(hjust = 1))
 ```
 
-After reviewing the PCA plot, it is evident that the malignant and benign data points distinctly separate when projected onto the first two principal components. This results in two overlapping yet clearly distinguishable clusters (red one for malignant and blue for benign).
+After reviewing the PCA plot, it becomes evident that the malignant and benign data points distinctly separate when projected onto the first two principal components. This results in two overlapping yet clearly distinguishable clusters (red one for malignant and blue for benign).
 
 ## We now plot the rotation matrix
 

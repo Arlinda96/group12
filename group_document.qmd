@@ -6,21 +6,6 @@ format:
 editor: visual
 ---
 
-<<<<<<< HEAD
-## Group member s223712
-
-New feature
-
-```{r}
-x <- 2
-y <- 3
-x + y
-```
-
-```{r}
-#Github exercises 
-```
-=======
 # Lab_07 Assignment Group 12
 
 *Group members:*
@@ -28,7 +13,6 @@ x + y
 s22277, s223712, s234118, 222940, 222785
 
 ## PCA
->>>>>>> 39bbdded99db4516746252af4b58e46a64c2aa72
 
 For this assignment we want to learn to do a PCA (principal component analysis) in a collaboration by the group - facilitated by the use of github. For this purpose, the workflow of Professor Claus O. Wilke was followed.
 
@@ -105,8 +89,7 @@ pca_fit |>
   coord_fixed()
 ```
 
-<<<<<<< HEAD
-## Group member s222785
+
 =======
 ## We quantify the variance explained by each PC
 >>>>>>> 39bbdded99db4516746252af4b58e46a64c2aa72

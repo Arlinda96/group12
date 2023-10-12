@@ -27,7 +27,7 @@ library(broom)
 
 ## Load data
 
-First we load the data - we chose to use the data from "PCA tidyverse style" by Claus O. Wilke, Professor of Integrative Biology (https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/).
+First, we load the data - we chose to use the data from "PCA tidyverse style" by Claus O. Wilke, Professor of Integrative Biology (https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/).
 
 This data is a breast cancer dataset from the University of Wisconsin Hospitals. 699 patient biopsies are available, and is scored on a scale of 1-10 for 9 attributes. The true outcome is binary (benign/malignant).
 

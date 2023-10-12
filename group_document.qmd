@@ -92,7 +92,6 @@ pca_fit |>
 
 =======
 ## We quantify the variance explained by each PC
->>>>>>> 39bbdded99db4516746252af4b58e46a64c2aa72
 
 ```{r}
 pca_fit |>

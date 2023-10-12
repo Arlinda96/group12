@@ -5,5 +5,5 @@ editor: visual
 ---
 
 ```         
-git config --global user.email "s222785@dtu.dk"   git config --global user.name "jadth"
+git config --global user.email "s222785@dtu.dk"   git config --global user.name "jadth" 
 ```
